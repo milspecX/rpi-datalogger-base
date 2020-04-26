@@ -8,7 +8,7 @@ from gpiozero import CPUTemperature
 file = open("/media/usb/data_log_04252020.csv", "a")
 i = 0
 if os.stat("/media/usb/data_log_04252020.csv").st_size == 0:
-    file.write("Date, Time, Reading\n")
+    file.write("Date,Time,Reading\n")
 while True:
     i = i+1
     date_now = datetime.today().date()
